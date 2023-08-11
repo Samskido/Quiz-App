@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aqua;
+}
+/* video background */
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  h1 {
+    width: 100%;
+    display: block;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    font-weight: 900;
+    width: min(90%, 53rem);
+    margin-inline: auto;
+    margin-top: 3rem;
+    background-image:conic-gradient(#553c9a 30%, #ee4b2b 40%, #ee4b2b 70%, #00c2cb 80%, #553c9a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+h3{
+    width: min(90%, 53rem);
+    width: 63%;
+   display: block;
+   background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-inline: auto;
+    color:gold;
+    margin-bottom: 2rem;
+   
+
+}
+
+
+main {
+    padding: 2rem;
+    border: #fff .3rem solid;
+    width: min(90%, 53rem);
+    margin-inline: auto;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    margin: 1rem;
+    color:black;
+    border: #fff solid 2px;
+    font-weight: 900;
+    background-image: url(/images/demo-background-image.avif);
+    background-size: 250px;
+    background-repeat: repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    
+}    
+
+li {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+}
+
+input#submit {
+    padding: 1rem 3.5rem;
+    border-radius: 1rem;
+    display: block;
+    margin-inline: auto;
+    background-color:gray;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 14rem;
+}
+
+
+input#submit:hover {
+    color: hsl(184, 100%, 8%);
+    background-color: gold
+}
+
+a {
+    margin: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+.result {
+    text-align: center;
+    font-size: 2rem;
+}
+
+span {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-inline: 1rem;
+    color: crimson;
+    font-family: Helvetica, sans-serif;
+}
+
+.result {
+    display: none;
+    color: hsl(184, 100%, 8%);
+}
+
+
+._blank{
+    color:#fff;
+}
+.contact{
+    color:#fff;
+    margin-left: 1rem;
+}
+.link{
+    color:#fff;
+    font-style: italic;
+}
+
+
+
+p.answer1, p.answer2, p.answer3, p.answer4, p.answer5, p.answer6, p.answer7, p.answer8, p.answer9, p.answer10, p.answer11, p.answer12, p.answer13, p.answer14, p.answer15 {
+    color:hsl(184, 100%, 8%);
+    margin-top: 1.3rem;
+    display: none;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+
+
+/*==========  MEDIA QUERRYS ==============*/
+
+
+@media  (min-width: 768px) and (max-width: 991px) {
+    input#submit{
+        margin: auto ;
+        color:gold;
+       
+    }
+    .contact{
+        color: #fff;
+    }
+    a{
+        color: #fff;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    h2{
+        width: 100%;
+        margin: auto 0;
+    }
+
+    h3{
+        width: auto;
+    }
+
+    label{
+        width: auto;
+        font-size: 16px;
+    }
+    input#submit{
+        margin: auto  ;
+        color:gold; 
+    }
+    a{
+        color: #fff;
+        font-size: 16px;
+       
+    }
+    .contact{
+        color:#fff;
+        margin-left: 1.3rem;
+    }
+   span{
+    font-size: 36px;
+   }
+   .score-display{
+    margin-bottom: 1rem;
+   }
+   
+
+
+}
+
+@media    (max-width: 480px) {
+    h2{
+        width: 100%;
+        margin: auto 0;
+    }
+
+    h3{
+        width: auto;
+    }
+
+    label{
+        width: auto;
+        font-size: 16px;
+    }
+    input#submit{
+        margin: auto  ;
+        color:gold; 
+    }
+    a{
+        color: #fff;
+        font-size: 16px;
+       
+    }
+    .contact{
+      color: #fff;
+      margin-left: 1.5rem;
+    }
+    span{
+        font-size: 34px;
+       }
+       .score-display{
+        margin-bottom: 1rem;
+    }
+   
+   
+
+}
+
+
+@media  (min-width: 350px) and (max-width: 450px){
+    span{
+       font-size: 20px;
+    }
+   .score-display{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 17px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    label{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    ol, li{
+        font-size: 14px;
+    }
+
+    ._blank{
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .contact{
+    margin-right: -1rem;
+    margin-left: 1rem;
+    }
+    .link{
+       margin-right: -1rem;
+       margin-left: -0rem
+    }
+
+  
+}
+
+
+
+  
